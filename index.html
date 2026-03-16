@@ -9,31 +9,55 @@
 <body>
     <h1>Switch Statements</h1>
 
+    <button class="btn btn-info" onclick="teamRank()">Rank</button>
+
     <script>
-        let team = "Red";//string
+function teamRank(){
+    var rank = "1st"
+
+        switch(true){
+            case(rank === "1st"):
+                message = "EZ win fr"
+            break;
+            case(rank === "2nd"):
+                message = "Second :("
+            break;
+            case (rank === "3rd"):
+                message = "Second!!(Second to Last)"
+            break;
+            case (rank === "4rth"):
+                message = "Last place"
+                break;
+
+            default:
+            message = "Not Found"
+        }
+    alert(message)
+    
+}
+            
+
+        let team = "Red";
 
         switch(team){
             case "Red":
                 alert("EZ win fr")
             break;
             case "Blue":
-                alert("Go Blue")
-            break;
-            case "Yellow":
-                alert("Go Yellow")
+                alert("Second :(")
             break;
             case "Green":
-                alert("Go Green!") 
+                alert("Second!!(Second to Last)")
+            break;
+            case "Yellow":
+                alert("Last place") 
                 break;
 
             default:
             alert("Not Found")
         }
-            
-
-        
-        
-
     </script>
+
+
 </body>
 </html>
